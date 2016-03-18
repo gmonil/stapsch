@@ -1,0 +1,12 @@
+1.  main dashboard page
+2.  chat page
+3.  copy of chat
+4.  alert page
+5.  copy of alert page
+6.  jqGrid addition
+7.  code understanding and refectoring
+8.  font awesome icons fetching
+9.  animation
+10. thenewboston css
+11. review from others
+12. check responsiveness
