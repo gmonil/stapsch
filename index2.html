@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Staptalk</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="navbar navbar-default">
+		<div class="container-fluid">
+			<!--logo-->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Staptalk</a>
+			</div>
+
+			<!--Menu item-->
+			<div class="collapse navbar-collapse" id="mainNavBar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Content</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<!--right align-->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Friends</a></li>
+							<li><a href="#">Photos</a></li>
+							<li><a href="#">logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<!-- sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</div>
+
+		<!-- Main -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+
+						<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Open Log In window</button>
+						<div class="modal fade" id="popUpWindow">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<!-- header -->
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h2 class="modal-title">LogIn</h2>
+									</div>
+									<!-- body -->
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<input type="email" class="form-control" placeholder="Email">
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" placeholder="Password">
+											</div>
+										</form>
+									</div>
+									<!-- footer -->
+									<div class="modal-footer">
+										<button class="btn btn-success btn-block">Log In</button>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+						<h1>Sidebar Layouts are Cool</h1>
+						<p>lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
