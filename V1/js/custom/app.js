@@ -16,3 +16,42 @@
             $(".right-side").toggleClass("left-trans");
         }
     });
+
+$(function() {
+    $(function() {
+       
+        $('#modal_alert_subject').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+              cancelLabel: 'Clear',
+               format: 'DD/MM/YYYY'
+            }
+        });
+        $('#modal_alert_subject').on('apply.daterangepicker', function(ev, picker) {
+              $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+          });
+
+          $('#modal_alert_subject').on('cancel.daterangepicker', function(ev, picker) {
+              $(this).val('');
+          });
+
+       $('#modal_notice_subject').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear',
+                format: 'DD/MM/YYYY'
+            }
+        });
+        $('#modal_notice_subject').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+        });
+
+        $('#modal_notice_subject').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+    });
+});
+/*
+jQuery(document).ready(function($) {
+    $('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height()-46);
+});*/

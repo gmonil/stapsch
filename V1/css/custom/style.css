@@ -41,9 +41,6 @@ body > .header {
 .left-side {
   min-height: 100%;
   display: block;
-   -webkit-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
 }
 /*right side - contins main content*/
 .right-side {
@@ -70,6 +67,10 @@ body > .header {
     top: 0;
     left: 0;
 }
+
+  .affix {
+      top: 0px;
+  }
 @media screen and (min-width: 992px) {
   .left-side {
     padding-top: 46px;
@@ -875,7 +876,37 @@ content: '';
 .list-message .panel{
   background: #f0f3f4;
 }
-
+.panel-heading{
+  padding: 5px 15px;
+}
 .panel-heading-text a{
   color: #ffffff;
+}
+.modal-header{
+  padding: 0;
+}
+
+.modal-title{
+  background: #eee;
+  padding: 5px 15px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+}
+.modal-body{
+  padding: 0;
+}
+.modal-header .close{
+    margin-top: 11px;
+    margin-right: 11px;
+    opacity: 0.6;
+}
+
+.modal-dialog .form-group label{
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.form-group {
+  margin-bottom: 0px;
 }
