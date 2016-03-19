@@ -13,5 +13,6 @@
             //Else, enable content streching
             $('.left-side').toggleClass("collapse-left");
             $(".right-side").toggleClass("strech");
+            $(".right-side").toggleClass("left-trans");
         }
     });

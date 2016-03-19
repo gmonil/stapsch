@@ -14,8 +14,8 @@
 .skin-black .navbar .nav .open > a:hover,
 .skin-black .navbar .nav .open > a:focus {
   background: #39435C;
-  color: #fff;
-  padding-bottom: 20px;
+  color: #fff;  
+  padding-bottom: 12px !important;
 }
 .skin-black .navbar .navbar-right > .nav {
   margin-right: 10px;
@@ -28,8 +28,8 @@
 }
 /* skin-black logo */
 .skin-black .logo {
-  background-color: #283744;
-  color: #f9f9f9;
+  background-color: #fff;
+  color: #000;
 }
 .skin-black .logo > a {
   color: #f9f9f9;
@@ -52,13 +52,25 @@
   color: #eee;
 }
 /* skin-black sidebar */
-.skin-black .sidebar {
+/* .skin-black .sidebar {
   border-bottom: 1px solid #39435C;
 }
-.skin-black .sidebar > .sidebar-menu > li {
+ */.skin-black .sidebar > .sidebar-menu > li {
   /*border-top: 1px solid #333;
   border-bottom: 0px solid #444;*/
 }
+.skin-black .sidebar > .sidebar-menu > li:hover,
+.skin-black .sidebar > .sidebar-menu > li.active{
+  border-left: 5px solid #1A7AB9;
+}
+
+.skin-black .sidebar > .sidebar-menu > li:hover > a > i,
+.skin-black .sidebar > .sidebar-menu > li.active > a > i,
+.skin-black .sidebar > .sidebar-menu > li:hover > a ,
+.skin-black .sidebar > .sidebar-menu > li.active {
+  color: #fff;
+}
+
 .skin-black .sidebar > .sidebar-menu > li:first-of-type {
   border-top: 1px solid #444;
 }
@@ -70,15 +82,22 @@
 }
 .skin-black .sidebar > .sidebar-menu > li > a:hover,
 .skin-black .sidebar > .sidebar-menu > li.active > a {
-  color: #f6f6f6;
-  background: #425164;
+    color: #fff;
+    background: #181b1f;
+}
+.skin-black .sidebar > .sidebar-menu > li > a:hover,
+.skin-black .sidebar > .sidebar-menu > li.active > a{
+    font-size: 14px;
+      -webkit-transition: font-size .5s;
+    -o-transition: font-size .5s;
+    transition: font-size .5s;
 }
 .skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
   margin: 0 1px;
   background: #35404d;
 }
 .skin-black .left-side {
-  background: #39435C;
+  background: #23272D;
 }
 .skin-black .sidebar a {
   color: #eee;
@@ -150,4 +169,11 @@
 }
 .skin-black .sidebar .sidebar-menu .treeview-menu > li:hover {
   background-color: #404B5F;
+}
+
+.skin-black .sidebar a {
+    color: #808b9c;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica;
 }
