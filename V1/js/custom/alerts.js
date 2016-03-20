@@ -32,12 +32,13 @@ $(document).ready(function() {
 	      "mData": null,
 	      "bSortable": false,
 	      "mRender": function(data, type, full) {
-	        return '<button type="button" class="btn btn-success btn-sm" onclick="func(\''+ full[0] + '\')"><i class="fa fa-pencil-square-o"></i>&nbsp; edit</a>';
+	        return '<button type="button" class="btn btn-success btn-sm" onclick="func(\''+ full[0] + '\'' +',' +'\''+ full[1] + '\')"><i class="fa fa-pencil-square-o"></i>&nbsp; edit</a>';
 	      }
 	  }]});
     $('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height()-46);
 });
 
-function func(data){
-	alert(data);
+function func(std, desc){
+	$('#myAlertModal').modal('show');
+	$("#modal_alert_desc").val(desc);
 }

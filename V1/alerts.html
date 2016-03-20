@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
     <title>Staptalk | dashboard</title>
-    <link rel="stylesheet" type="text/css" href="https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500,700,700italic,500italic,400italic,300italic">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <!-- bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
@@ -256,6 +256,59 @@
             </section>
             </aside>
 
+        </div>
+         <div id="myAlertModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-title">Post Alert</div>
+              </div>
+              <div class="modal-body">
+              <form role="form-horizontal">
+                 <div class="form-group">
+                  <label class="control-label col-sm-2" for="modal_alert_to">Standard:</label>
+                  <div class="col-sm-4">
+                   <select id="modal_alert_to" class="form-control">
+                      <option>All</option>
+                      <option>IX-A</option>
+                      <option>IX-B</option>
+                    </select>
+                  </div>
+                   <label class="control-label col-sm-2" for="modal_alert_stu">Student:</label>
+                  <div class="col-sm-4">
+                   <select id="modal_alert_stu" class="form-control">
+                      <option>All</option>
+                      <option>Mahesh Tiwari</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="modal_alert_subject">Date Range:</label>
+                    <div class="col-sm-9">
+                        <!-- <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp; -->
+                        <input type="text" name="daterange" class="form-control" id="modal_alert_subject"/>    
+                        <!-- <b class="caret"></b> -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="modal_alert_desc">Description:</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" id="modal_alert_desc"></textarea>
+                    </div>
+                </div>
+                </form>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
         </div>
         <script src="js/jquery.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
