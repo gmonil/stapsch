@@ -51,7 +51,7 @@ $(function() {
         });
     });
 });
-/*
+
 jQuery(document).ready(function($) {
     $('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height()-46);
-});*/
+});
