@@ -1,4 +1,4 @@
-    //Enable sidebar toggle
+//Enable sidebar toggle
     $("[data-toggle='offcanvas']").click(function(e) {
         e.preventDefault();
 
@@ -17,17 +17,27 @@
     });
 
 
-jQuery(document).ready(function($) {
-    
+$(window).resize(function(){
+    $('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height()-46);
 });
+
 $(document).ready(function() {
     $('#alertTable').DataTable({
     	bAutoWidth: false , 
 	  	aoColumns : [
 	    { sWidth: '10%' },
 	    { sWidth: '50%' },
-	    { sWidth: '20%' },
-	    { sWidth: '20%' }
-	  ]});
+	    { sWidth: '15%' },
+	    { sWidth: '15%' }, {
+	      "mData": null,
+	      "bSortable": false,
+	      "mRender": function(data, type, full) {
+	        return '<button type="button" class="btn btn-success btn-sm" onclick="func(\''+ full[0] + '\')"><i class="fa fa-pencil-square-o"></i>&nbsp; edit</a>';
+	      }
+	  }]});
     $('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height()-46);
 });
+
+function func(data){
+	alert(data);
+}
