@@ -20,35 +20,3 @@ $("[data-toggle='offcanvas']").click(function (e) {
 $(window).resize(function () {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
 });
-
-$(document).ready(function () {
-	$('#alertTable').DataTable({
-		bAutoWidth: false,
-		aoColumns: [
-			{
-				sWidth: '7%'
-			},
-			{
-				sWidth: '65%'
-			},
-			{
-				sWidth: '10%'
-			},
-			{
-				sWidth: '10%'
-			}, {
-				"mData": null,
-				sWidth: '5%',
-				"bSortable": false,
-				"mRender": function (data, type, full) {
-					return '<a href="#" onclick="func(\'' + full[0] + '\'' + ',' + '\'' + full[1] + '\')"><i class="fa fa-pencil-square-o"></i>&nbsp;Edit</a>';
-				}
-	  }]
-	});
-	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
-});
-
-function func(std, desc) {
-	$('#myAlertModal').modal('show');
-	$("#modal_alert_desc").val(desc);
-}

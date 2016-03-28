@@ -1,0 +1,25 @@
+.panel,
+.panel .panel-heading {
+	border-radius: 0 !important;
+}
+.panel-chat {
+	background: #1EB4D2;
+	color: #fff;
+}
+.media1 {
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+	cursor: pointer;
+}
+input.form-control,
+input[type=text] {
+	box-shadow: none !important;
+}
+.btnCls {
+	border-radius: 0px !important;
+	margin: 0;
+	height: 37px;
+}
+.chatCls .panel-body {
+	padding: 2px 15px;
+}
