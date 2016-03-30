@@ -918,3 +918,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .editClass a {
 	color: #666;
 }
+.mainColumn{
+	color:#1A7AB9;
+	font-weight: bold;
+	font-size: 15px;
+}
