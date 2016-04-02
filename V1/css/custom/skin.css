@@ -96,8 +96,9 @@
   margin: 0 1px;
   background: #35404d;
 }
+
 .skin-black .left-side {
-  background: #23272D;
+   background: #23272D; 
 }
 .skin-black .sidebar a {
   color: #eee;
