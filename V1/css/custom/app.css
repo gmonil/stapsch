@@ -1,0 +1,25 @@
+.totalCount{
+	font-size: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.userText{
+	text-align: center;
+}
+
+.lightorange{
+	background: #FAD1B3;
+}
+
+.lightgreen{
+	background: rgb(207,249,149);
+}
+
+.lightcyan{
+	background: rgb(155,251,250);
+}
+
+.lightpurple{
+	background: rgb(238,217,250);
+}

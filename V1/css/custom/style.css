@@ -860,7 +860,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
   text-align: center;
 }
 .panel-primary>.panel-heading {
-  background-color: #57b8d9;
+  background-color: #DB7093;
+  border-radius: 0;
 }
 .featured-heading {
   color: #555;
@@ -905,10 +906,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .list-message .panel-body {
   padding: 1px 15px;
 }
-.list-message .panel {
+/* .list-message .panel {
   background: #f0f3f4;
 }
-.panel-heading {
+ */
+ .panel-heading {
   padding: 5px 15px;
 }
 .panel-heading-text a {
