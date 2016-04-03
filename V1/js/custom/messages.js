@@ -22,7 +22,19 @@ $(window).resize(function () {
 });
 jQuery(document).ready(function ($) {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
+
+    $('.peopleListSlim').slimScroll({
+        height: '668px',
+        alwaysVisible: true
+    });
+
+    $('.chatHistorySlim').slimScroll({
+        height: '398px',
+        alwaysVisible: true
+    });
 });
+
+
 
 (function(){
   
