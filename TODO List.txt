@@ -12,7 +12,8 @@
 12. check responsiveness
 
 
-
+// for sub-menu
 https://vsn4ik.github.io/bootstrap-submenu/
 
-
+// for timeline
+http://codepen.io/jenniferperrin/pen/xfwab

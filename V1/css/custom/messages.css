@@ -33,24 +33,27 @@ input[type=text] {
 }
 
 .people-list{
-	background: #444753;
+	background: #d1d1d1;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
 .people-list .search {
-  padding: 10px;
+  padding: 10px 0 10px 10px;
 }
 .people-list input {
   border-radius: 3px;
   border: none;
   padding: 6px;
   color: white;
-  background: #6A6C75;
-  width: 90%;
+  background: #c1c1c1;
+  width: 91%;
   font-size: 14px;
+  margin-left: 5px;
+  padding-right: 30px;
 }
 .people-list .fa-search {
   position: relative;
+  color: white;
   left: -25px;
 }
 .people-list ul {
@@ -65,11 +68,12 @@ list-style: none;
   float: left;
 }
 .people-list .about {
-  float: left;
+
   margin-top: 8px;
 }
 .people-list .about {
   padding-left: 8px;
+  width: 100%;
 }
 .people-list .status {
   color: #92959E;
@@ -226,16 +230,20 @@ textarea:focus{
 }
 
 .name {
-	color: #F5F5DC;
+	color: #666666;
 }
 .name i{
 	color:#86BB71;
 	font-size: 15px;
 }
 .topic{
-	color: #FF7F50;
+	color: #F17F5f;
 }
 .topic i{
  color: #E38968;
  font-size: 15px;
+}
+
+.text-timing{
+  color:666;
 }

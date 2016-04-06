@@ -73,7 +73,7 @@
     background: #ffffff;
     position: relative;
 }
-.timeline > li.alertCls > .timeline-panel:before {
+.timeline > li > .timeline-panel:before {
     position: absolute;
     top: 26px;
     right: -15px;
@@ -84,62 +84,17 @@
     border-bottom: 15px solid transparent;
     content:" ";
 }
-.timeline > li.alertCls > .timeline-panel:after {
+.timeline > li > .timeline-panel:after {
     position: absolute;
     top: 27px;
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #1ABC9C;
-    border-right: 0 solid #1ABC9C;
+    border-left: 14px solid #ffffff;
+    border-right: 0 solid #ffffff;
     border-bottom: 14px solid transparent;
     content:" ";
 }
-.timeline > li.noticesCls > .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #dcdcdc;
-    border-right: 0 solid #dcdcdc;
-    border-bottom: 15px solid transparent;
-    content:" ";
-}
-.timeline > li.noticesCls > .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #B5656D;
-    border-right: 0 solid #B5656D;
-    border-bottom: 14px solid transparent;
-    content:" ";
-}
-.timeline > li.absentCls > .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #dcdcdc;
-    border-right: 0 solid #dcdcdc;
-    border-bottom: 15px solid transparent;
-    content:" ";
-}
-.timeline > li.absentCls > .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #E7B252;
-    border-right: 0 solid #E7B252;
-    border-bottom: 14px solid transparent;
-    content:" ";
-}
-
 .timeline > li > .timeline-badge {
     color: #ffffff;
     width: 24px;
@@ -187,6 +142,7 @@
 }
 .timeline-footer {
     padding: 5px 15px;
+    background-color:#f4f4f4;
 }
 .timeline-footer p { margin-bottom: 0; }
 .timeline-footer > a {
@@ -204,7 +160,7 @@
     left: -12px;
 }
 .timeline .text-right{
-    color: #FAEBD7;
+    color: #333333;
 }
 .no-float {
     float: none !important;
@@ -256,7 +212,7 @@
     }
 }
 
-
+/*
 .alertCls .timeline-panel{
 	background: #1ABC9C !important;
 } 
@@ -304,3 +260,4 @@
 .absentCls .timeline-badge i{
 	color: #E7B252;
 }
+*/

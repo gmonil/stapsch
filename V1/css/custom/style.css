@@ -860,7 +860,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   text-align: center;
 }
 .panel-primary>.panel-heading {
-  background-color: #DB7093;
+  background-color: #fafafa;
   border-radius: 0;
 }
 .featured-heading {
