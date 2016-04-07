@@ -399,7 +399,7 @@ body > .header .logo .icon {
   }
   body.fixed > .wrapper,
   body.fixed .sidebar-offcanvas {
-    margin-top: 100px!important;
+		margin-top: 93px!important;
   }
 }
 
@@ -436,6 +436,9 @@ body > .header .logo .icon {
   width: 20px;
   margin-right: 5px;
   color: #808b9c;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
 }
 .sidebar .sidebar-menu .treeview-menu {
   display: none;
