@@ -261,3 +261,16 @@
 	color: #E7B252;
 }
 */
+
+.alertCls .timeline-heading h5{
+    color: #1ABC9C;
+}
+.timeline-heading h5 i{
+    font-size: 15px;
+}
+.noticesCls .timeline-heading h5{
+    color: #B5656D;
+}
+.absentCls .timeline-heading h5{
+    color: #E7B252;
+}

@@ -2,6 +2,7 @@
 $("[data-toggle='offcanvas']").click(function (e) {
 	e.preventDefault();
 
+	$('body').toggleClass("collp");
 	//If window is small enough, enable sidebar push menu
 	if ($(window).width() <= 992) {
 		$('.row-offcanvas').toggleClass('active');
@@ -54,6 +55,7 @@ $(function () {
 
 jQuery(document).ready(function ($) {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
+	$('[data-submenu]').submenupicker();
 });
 
 $(window).resize(function () {

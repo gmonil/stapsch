@@ -1,7 +1,7 @@
 //Enable sidebar toggle
 $("[data-toggle='offcanvas']").click(function (e) {
 	e.preventDefault();
-
+	$('body').toggleClass("collp");
 	//If window is small enough, enable sidebar push menu
 	if ($(window).width() <= 992) {
 		$('.row-offcanvas').toggleClass('active');
@@ -22,6 +22,7 @@ $(window).resize(function () {
 });
 
 $(document).ready(function () {
+	$('[data-submenu]').submenupicker();
 	$('#alertTable').DataTable({
 		bAutoWidth: false,
 		aoColumns: [
@@ -46,6 +47,7 @@ $(document).ready(function () {
 	  }]
 	});
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
+
 });
 
 function func(std, desc) {

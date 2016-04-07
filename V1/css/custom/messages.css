@@ -33,7 +33,7 @@ input[type=text] {
 }
 
 .people-list{
-	background: #d1d1d1;
+	background: #eeffee;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -45,7 +45,7 @@ input[type=text] {
   border: none;
   padding: 6px;
   color: white;
-  background: #c1c1c1;
+  background: #eeeeee;
   width: 91%;
   font-size: 14px;
   margin-left: 5px;
@@ -57,7 +57,7 @@ input[type=text] {
   left: -25px;
 }
 .people-list ul {
-  padding: 0 20px;
+  padding: 0 20px 0 10px;
 list-style: none;
 }
 .people-list ul li {
@@ -111,7 +111,7 @@ list-style: none;
   margin-top: 12px;
 }
 .chat .chat-history {
-  padding: 30px 30px 20px;
+  padding: 15px 30px 10px;
   overflow-y: scroll; 
       max-height: 491px;
     height: 491px;
@@ -125,11 +125,11 @@ list-style: none;
 }
 .chat .chat-history .message {
   color: white;
-  padding: 18px 20px;
+  padding: 10px 15px;
   line-height: 26px;
   font-size: 16px;
   border-radius: 7px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 90%;
   position: relative;
 }
@@ -160,7 +160,7 @@ list-style: none;
   left: 93%;
 }
 .chat .chat-message {
-  padding: 16px;
+  padding: 0 16px 10px 16px;
 }
 textarea:focus{
 	box-shadow: none;
@@ -246,4 +246,18 @@ textarea:focus{
 
 .text-timing{
   color:666;
+}
+.letterCls{
+      float: left;
+    height: 36px;
+    font-size: 18px;
+    padding: 2px 5px;
+    border: 2px solid;
+    border-radius: 36px;
+    line-height: 29px;
+    margin: 9px;
+    width: 36px;
+    vertical-align: middle;
+    text-align: center;
+    background: #FAEBD7;
 }
