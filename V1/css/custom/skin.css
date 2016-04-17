@@ -1,7 +1,7 @@
 
 .skin-black .navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
+  background-color: #3C8DBC;
+  border:none;
 }
 .skin-black .navbar .nav a {
   color: #333333;
@@ -31,7 +31,7 @@
 /* skin-black logo */
 .skin-black .logo {
   background-color: #fff;
-  color: #000;
+  color: #eeeeee;
 }
 .skin-black .logo > a {
   color: #f9f9f9;
@@ -64,6 +64,7 @@
 	border-color: #E5E5E5;
 	border-style: solid;
 	border-width: 1px 0 0;
+	border:none;
 }
 .skin-black .sidebar > .sidebar-menu > li:hover,
 .skin-black .sidebar > .sidebar-menu > li.active{
@@ -111,7 +112,7 @@
 }
 
 .skin-black .left-side {
-	background: #F7F8FA;
+	background: #ffffff;
 	border-style: solid;
 	border-color: #CCC;
 	border-width: 0 1px 0 0;
