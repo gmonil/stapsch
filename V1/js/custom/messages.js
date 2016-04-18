@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('.chatHistorySlim').slimScroll({
-        height: '398px',
+        height: '385px',
         alwaysVisible: true
     });
 });
@@ -53,7 +53,7 @@ jQuery(document).ready(function ($) {
     },
     bindEvents: function() {
       this.$button.on('click', this.addMessage.bind(this));
-      this.$textarea.on('keyup', this.addMessageEnter.bind(this));
+      //this.$textarea.on('keyup', this.addMessageEnter.bind(this));
     },
     render: function() {
       this.scrollToBottom();
@@ -73,7 +73,7 @@ jQuery(document).ready(function ($) {
     
     addMessage: function() {
     	//backend call
-      this.messageToSend = this.$textarea.val()
+      this.messageToSend = this.$textarea.val().trim()
       this.render();         
     },
     addMessageEnter: function(event) {

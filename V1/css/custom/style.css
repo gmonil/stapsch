@@ -442,7 +442,10 @@ body > .header .logo .icon {
   }
   body.fixed > .wrapper,
   body.fixed .sidebar-offcanvas {
-		margin-top: 50px!important;
+		margin-top: 93px!important;
+  }
+  .right-side{
+    padding-top: 0;
   }
 }
 
