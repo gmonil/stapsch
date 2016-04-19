@@ -34,14 +34,13 @@ input[type=text] {
 
 .people-list{
 	background: #ffffff;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+  border-right: 1px solid #555;
 }
 .people-list .search {
   padding: 10px 0 0px 10px;
 }
 .people-list input {
-  border-radius: 3px;
+  
   border: none;
   padding: 6px;
   color: white;
@@ -81,8 +80,6 @@ list-style: none;
 
 .chat {
   background: #fff;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   color: #434651;
 }
 .chat .chat-header {
@@ -179,13 +176,13 @@ textarea:focus{
 }
 .chat .chat-message button {
   float: right;
-  color: #94C2ED;
+  /*color: #94C2ED;*/
   font-size: 16px;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  background: #F2F5F8;
+ /* background: #F2F5F8;*/
 }
 .chat .chat-message button:hover {
   color: #75b1e8;

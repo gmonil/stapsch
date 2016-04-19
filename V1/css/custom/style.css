@@ -1022,3 +1022,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .navbar-nav>.dropdown>.dropdown-menu>.dropdown-submenu>.dropdown-menu>li.dropdown-header, .navbar-nav>.dropdown>.dropdown-menu>.dropdown-submenu>.dropdown-menu>li>a{
     padding-left: 21px;
 }
+
+.no-padding{
+  padding:0;
+}

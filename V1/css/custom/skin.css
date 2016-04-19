@@ -196,3 +196,9 @@
 	font-size: 13px;
 	color: #585858;
 }
+
+.navbar{
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow:none;
+}
