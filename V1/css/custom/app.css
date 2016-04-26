@@ -303,11 +303,6 @@
     padding-bottom: 0;
 }
 
-@media (max-width: 480px) {
-   .featured-heading  {
-      display: none;
-   }
-}
 @media (max-width: 992px) {
    .timeline  {
         margin-right: 20px;
