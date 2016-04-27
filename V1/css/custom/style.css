@@ -1032,3 +1032,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
       display: none;
    }
 }
+.right-side{
+  background: #e6e7e8;
+}
