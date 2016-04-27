@@ -10,3 +10,13 @@
 10. thenewboston css
 11. review from others
 12. check responsiveness
+
+
+// for sub-menu
+https://vsn4ik.github.io/bootstrap-submenu/
+
+// for timeline
+http://codepen.io/jenniferperrin/pen/xfwab
+
+Test
+https://www.youtube.com/watch?v=ULt_71YR8UU

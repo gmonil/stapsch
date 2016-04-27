@@ -1,0 +1,10 @@
+.editForm{
+	border: 1px solid #666;
+	padding: 10px 0px;
+	margin: 5px;
+}
+.form-control{
+	border: none !important;
+    box-shadow: none;
+    padding: 7px 10px;
+}
