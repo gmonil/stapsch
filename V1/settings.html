@@ -63,7 +63,7 @@
                             <a href="#">
                                 <i class="fa fa-user fa-fw"></i> Profile
                             </a>
-                            <a href="#">
+                            <a href="settings.html">
                                 <i class="fa fa-cog fa-fw"></i> Settings
                             </a>
                         </li>
@@ -150,13 +150,24 @@
                               <div ng-hide="showName" class="form-group">
                                     <label class="control-label col-sm-2 col-xs-4">Name:</label>
                                     <div class="col-sm-9 col-xs-7">
-                                         <input type="text" class="form-control" ng-model="getName()" disabled="true">
+                                         <label class="form-control" ng-bind="getName()"></label>
                                     </div>
                                     <div class="col-sm-1 col-xs-1">
-                                        <button ng-click="showName=true">Edit</button>
+                                        <button ng-click="showName=true" class="btn btn-sm">Edit</button>
                                     </div>
                               </div>
-                              <div ng-show="showName">
+                              <div ng-show="showName" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4" for="firstName">Salutation:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <select class="form-control" ng-model="salutationAll">
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Mst.">Mst.</option>
+                                        <option value="Ms.">Ms.</option>
+                                      </select>
+                                    </div>
+                                  </div>
                                   <div class="form-group">
                                     <label class="control-label col-sm-2 col-xs-4" for="firstName">First Name:</label>
                                     <div class="col-sm-10 col-xs-8">
@@ -177,88 +188,277 @@
                                   </div>
                                   <br/>
                                   <div class="text-center">
-                                    <button ng-click="saveNamesToBackend()">Save</button>
-                                    <button ng-click="showName=false">Cancel</button>
+                                    <button class="btn btn-primary" ng-click="saveNamesToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showName=false">Cancel</button>
                                   </div>
                               </div>
-                              <div class="form-group">
+                              <div class="form-group" ng-hide="showPassword">
                                     <label class="control-label col-sm-2 col-xs-4">Password:</label>
                                     <div class="col-sm-9 col-xs-7">
-                                         <input type="password" class="form-control" ng-model="password" ng-disabled="!showPassword">
+                                        <input type="password" style="padding: 7px 10px;" class="form-control" ng-model="password" ng-disabled="true">
                                     </div>
                                     <div class="col-sm-1 col-xs-1">
-                                        <button ng-hide="showPassword" ng-click="showPassword=true">Edit</button>
+                                        <button ng-hide="showPassword" ng-click="showPassword=true" class="btn btn-sm">Edit</button>
                                     </div>
                               </div>
-                              <div ng-show="showPassword">
-                                  <br/>
+                              <div ng-show="showPassword" class="editForm">
+                                    <label class="control-label col-sm-2 col-xs-4">Password:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                         <input type="password" class="form-control" ng-model="password">
+                                    </div>
+                                  <br/> 
                                   <div class="text-center">
-                                    <button ng-click="savePasswordToBackend()">Save</button>
-                                    <button ng-click="showPassword=false">Cancel</button>
+                                    <button class="btn btn-primary" ng-click="savePasswordToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showPassword=false">Cancel</button>
                                   </div>
                               </div>
                               <div ng-hide="showContact" class="form-group">
                                     
                                     <label class="control-label col-sm-2 col-xs-4">Contacts:</label>
                                     <div class="col-sm-9 col-xs-7">
-                                         <label type="text" ng-bind="getContacts()" disabled="true"></label>
+                                         <label class="form-control" ng-bind="getContacts()"></label>
                                     </div>
                                     <div class="col-sm-1 col-xs-1">
-                                        <button ng-click="showContact=true">Edit</button>
+                                        <button ng-click="showContact=true" class="btn btn-sm">Edit</button>
                                     </div>
                               </div>
-                              <div ng-show="showContact">
+                              <div ng-show="showContact" class="editForm"> 
                                   <div class="form-group">
-                                    <label class="control-label col-sm-2 col-xs-4">Contact 1</label>
+                                    <label class="control-label col-sm-2 col-xs-4">Contact 1:</label>
                                     <div class="col-sm-10 col-xs-8">
                                       <input type="text" class="form-control" ng-model="contact1">
                                     </div>
                                   </div>
                                   <div class="form-group">
-                                    <label class="control-label col-sm-2 col-xs-4">Contact 2</label>
+                                    <label class="control-label col-sm-2 col-xs-4">Contact 2:</label>
                                     <div class="col-sm-10 col-xs-8">
                                       <input type="text" class="form-control" ng-model="contact2">
                                     </div>
                                   </div>
                                   <br/>
                                   <div class="text-center">
-                                    <button ng-click="saveContactToBackend()">Save</button>
-                                    <button ng-click="showContact=false">Cancel</button>
+                                    <button class="btn btn-primary" ng-click="saveContactToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showContact=false">Cancel</button>
                                   </div>
                             </div>
                             <div ng-hide="showEmails" class="form-group">
                                 
                                     <label class="control-label col-sm-2 col-xs-4">Emails:</label>
                                     <div class="col-sm-9 col-xs-7">
-                                         <label ng-bind="getEmails()"></label>
+                                         <label ng-bind="getEmails()" class="form-control"></label>
                                     </div>
                                     <div class="col-sm-1 col-xs-1">
-                                        <button ng-click="showEmails=true">Edit</button>
+                                        <button ng-click="showEmails=true" class="btn btn-sm">Edit</button>
                                     </div>
                               </div>
-                              <div ng-show="showEmails">
+                              <div ng-show="showEmails" class="editForm">
                                   <div class="form-group">
-                                    <label class="control-label col-sm-2 col-xs-4">Email 1</label>
+                                    <label class="control-label col-sm-2 col-xs-4">Email 1:</label>
                                     <div class="col-sm-10 col-xs-8">
                                       <input type="email" class="form-control" ng-model="email1">
                                     </div>
                                   </div>
                                   <div class="form-group">
-                                    <label class="control-label col-sm-2 col-xs-4">Email 2</label>
+                                    <label class="control-label col-sm-2 col-xs-4">Email 2:</label>
                                     <div class="col-sm-10 col-xs-8">
                                       <input type="email" class="form-control" ng-model="email2">
                                     </div>
                                   </div>
                                   <br/>
                                   <div class="text-center">
-                                    <button ng-click="saveEmailToBackend()">Save</button>
-                                    <button ng-click="showEmails=false">Cancel</button>
+                                    <button class="btn btn-primary" ng-click="saveEmailToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showEmails=false">Cancel</button>
                                   </div>
                             </div>
-
+                            <div ng-hide="showAddress" class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Home Address:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label ng-bind="getAddress()" class="form-control"></label>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <button ng-click="showAddress=true" class="btn btn-sm">Edit</button>
+                                    </div>
+                              </div>
+                              <div ng-show="showAddress" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Line 1:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="line1">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Line 2:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="line2">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Line 3:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="line3">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Line 4:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="line4">
+                                    </div>
+                                  </div>
+                                   <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">City:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="city">
+                                    </div>
+                                  </div>
+                                   <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">State:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="state">
+                                    </div>
+                                  </div>
+                                   <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Country:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="country">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Zip:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="zip">
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <div class="text-center">
+                                    <button class="btn btn-primary" ng-click="saveAddressToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showAddress=false">Cancel</button>
+                                  </div>
+                            </div>
+                            <br/>
+                            <div ng-hide="showOccupation" class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Occupation:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label class="form-control">{{occupation}}</label>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <button ng-click="showOccupation=true" class="btn btn-sm">Edit</button>
+                                    </div>
+                              </div>
+                              <div ng-show="showOccupation" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Occupation:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="occupation">
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <div class="text-center">
+                                    <button class="btn btn-primary" ng-click="saveOccupationToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showOccupation=false">Cancel</button>
+                                  </div>
+                            </div>
+                            <br/>
+                            <h5 style="margin-left: 25px; border-bottom: 1px solid;"> Student Information</h5>
+                            <div ng-hide="showStudentName" class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Name:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label class="form-control" ng-bind="getStudentName()"></label>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <button ng-click="showStudentName=true" class="btn btn-sm">Edit</button>
+                                    </div>
+                              </div>
+                              <div ng-show="showStudentName" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4" for="firstName">Salutation:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <select class="form-control" ng-model="salutationStudentAll">
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                        <option value="Mst.">Mst.</option>
+                                        <option value="Ms.">Ms.</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4" for="firstNameStudent">First Name:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="firstNameStudent" id="firstNameStudent" placeholder="Enter First Name">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2" for="middleNameStudent">Middle Name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" ng-model="middleNameStudent" id="middleNameStudent" placeholder="Enter Middle Name">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2" for="lastNameStudent">Last Name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" ng-model="lastNameStudent" id="lastNameStudent" placeholder="Enter Last Name">
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <div class="text-center">
+                                    <button class="btn btn-primary" ng-click="saveStudentNamesToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showStudentName=false">Cancel</button>
+                                  </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Class:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label class="form-control"> IX-A </label>
+                                    </div>
+                              </div>
+                              <div ng-hide="showStudentSkills" class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Skills:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label class="form-control" ng-bind="studentSkills"></label>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <button ng-click="showStudentSkills=true" class="btn btn-sm">Edit</button>
+                                    </div>
+                              </div>
+                              <div ng-show="showStudentSkills" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Skills:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="studentSkills">
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <div class="text-center">
+                                    <button class="btn btn-primary" ng-click="saveStudentSkillsToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showStudentSkills=false">Cancel</button>
+                                  </div>
+                            </div>
+                             <div ng-hide="showStudentAcedemics" class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Acedemics:</label>
+                                    <div class="col-sm-9 col-xs-7">
+                                         <label class="form-control" ng-bind="studentAcedemics"></label>
+                                    </div>
+                                    <div class="col-sm-1 col-xs-1">
+                                        <button ng-click="showStudentAcedemics=true" class="btn btn-sm">Edit</button>
+                                    </div>
+                              </div>
+                              <div ng-show="showStudentAcedemics" class="editForm">
+                                  <div class="form-group">
+                                    <label class="control-label col-sm-2 col-xs-4">Acedemics:</label>
+                                    <div class="col-sm-10 col-xs-8">
+                                      <input type="text" class="form-control" ng-model="studentAcedemics">
+                                    </div>
+                                  </div>
+                                  <br/>
+                                  <div class="text-center">
+                                    <button class="btn btn-primary" ng-click="saveStudentAcademicsToBackend()">Save</button>
+                                    <button class="btn btn-default" ng-click="showStudentAcedemics=false">Cancel</button>
+                                  </div>
+                            </div>
+                              <!--End-->
 
                         </div>
-					</div>
+					          </div>
                     <div  class="col-md-3 hidden-xs hidden-sm col-lg-3">
                         <div data-spy="affix" data-offset-top="-50" class="panel panel-primary rightSec">
                         </div>
@@ -267,7 +467,7 @@
 				<div class="row"></div>
 				
 			</section>
-        <div class="footer-main">
+        <div style="position:fixed;bottom: 0px;width: 100%;" class="footer-main">
             Copyright &copy; Staptalk, 2016
         </div>
 		</aside>

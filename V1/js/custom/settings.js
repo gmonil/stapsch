@@ -28,27 +28,59 @@ $(window).resize(function () {
 var app = angular.module("settingsApp",[]);
 app.controller("settingsController",function($scope){
 	
-	$scope.firstName = "";
-	$scope.middleName = "";
-	$scope.lastName = "";
-	$scope.contact1 = "";
-	$scope.contact2 = "";
-	$scope.email1 = "";
-	$scope.email2 = "";
+	$scope.salutationAll = "Ms.";
+	$scope.firstName = "Sangeeta";
+	$scope.middleName = "S";
+	$scope.lastName = "Patil";
+	$scope.password = "password";
+	$scope.contact1 = "1234567890";
+	$scope.contact2 = "0123456987";
+	$scope.email1 = "sangeeta@gmail.com";
+	$scope.email2 = "spatil@gmail.com";
+	$scope.line1 = "B/10, Shree Mansion,";
+	$scope.line2 = "Shiv Mandir Road,";
+	$scope.line3 = "Ram Nagar,";
+	$scope.line4 = "Next to school";
+	$scope.city = "Dombivli";
+	$scope.state = "Maharashtra";
+	$scope.country = "India";
+	$scope.zip = "421201";
+	$scope.occupation = "Job";
+
+	//Student information
+	$scope.salutationStudentAll = "Ms.";
+	$scope.firstNameStudent = "Sangeeta";
+	$scope.middleNameStudent = "S";
+	$scope.lastNameStudent = "Patil";
+	$scope.studentSkills = "Dancing, Singing, Chess, Carrom";
+	$scope.studentAcedemics = "Olympiad, Scholarship, Star gazing, Astronomy";
 
 	$scope.showName=false;
 	$scope.showPassword = false;
 	$scope.showContact = false;
 	$scope.showEmails = false;
+	$scope.showAddress = false;
+	$scope.showOccupation = false;
+
+	//Student information
+	$scope.showStudentName = false;
+	$scope.showStudentSkills = false;
+	$scope.showStudentAcedemics = false;
 
 	$scope.getName = function(){
-		return $scope.firstName + " " + $scope.middleName+ " "  + $scope.lastName;
+		return $scope.salutationAll + " " + $scope.firstName + " " + $scope.middleName+ " "  + $scope.lastName;
+	}
+	$scope.getStudentName = function(){
+		return $scope.salutationStudentAll + " " + $scope.firstNameStudent + " " + $scope.middleNameStudent+ " "  + $scope.lastNameStudent;
 	}
 	$scope.getContacts = function(){
 		return $scope.contact1 + ", " + $scope.contact2;
 	}
 	$scope.getEmails = function(){
 		return $scope.email1 + ", " + $scope.email2;
+	}
+	$scope.getAddress = function(){
+		return $scope.line1 + $scope.line2 + $scope.line3 + $scope.line4 +  ", " + $scope.city + ", " + $scope.state + ", " + $scope.country + ", " + $scope.zip;
 	}
 
 	$scope.saveNamesToBackend = function(){
@@ -63,4 +95,20 @@ app.controller("settingsController",function($scope){
 	$scope.saveEmailToBackend = function(){
 		$scope.showEmails = false;
 	}
+	$scope.saveAddressToBackend = function(){
+		$scope.showAddress = false;
+	}
+	$scope.saveOccupationToBackend = function(){
+		$scope.showOccupation = false;
+	}
+	$scope.saveStudentNamesToBackend  = function(){
+		$scope.showStudentName = false;
+	}
+	$scope.saveStudentSkillsToBackend  = function(){
+		$scope.showStudentSkills = false;
+	}
+	$scope.saveStudentAcademicsToBackend  = function(){
+		$scope.showStudentAcedemics = false;
+	}
+
 });
