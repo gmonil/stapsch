@@ -25,7 +25,7 @@ $(window).resize(function () {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
 });
 
-var app = angular.module("settingsApp",['ngAnimate']);
+var app = angular.module("settingsApp",[]);
 app.controller("settingsController",function($scope){
 	
 	$scope.salutationAll = "Ms.";
