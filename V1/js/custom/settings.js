@@ -52,6 +52,7 @@ app.controller("settingsController",function($scope){
 	$scope.firstNameStudent = "Sangeeta";
 	$scope.middleNameStudent = "S";
 	$scope.lastNameStudent = "Patil";
+	$scope.class = "IX-A";
 	$scope.studentSkills = "Dancing, Singing, Chess, Carrom";
 	$scope.studentAcedemics = "Olympiad, Scholarship, Star gazing, Astronomy";
 

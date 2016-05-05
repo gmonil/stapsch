@@ -202,3 +202,10 @@
   box-shadow: none;
   -webkit-box-shadow:none;
 }
+
+
+@media screen and (min-width: 1200px) {
+  .ppp{
+    display: none !important;
+  }
+}
