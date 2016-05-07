@@ -24,7 +24,6 @@ jQuery(document).ready(function ($) {
 $(window).resize(function () {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
 });
-
 var app = angular.module("settingsApp",[]);
 app.controller("settingsController",function($scope){
 	
@@ -87,8 +86,16 @@ app.controller("settingsController",function($scope){
 	$scope.saveNamesToBackend = function(){
 		$scope.showName=false;
 	}
+	$scope.passwordEditClick = function(){
+		
+	}
 	$scope.savePasswordToBackend = function(){
-		$scope.showPassword = false;
+		if($scope.newpassword == $scope.confirmnewpassword){
+			$scope.password = $scope.currentpassword;
+			$scope.showPassword = false;
+		} else{
+			alert("New Password and confirm password are not same. Please enter proper password");
+		}
 	}
 	$scope.saveContactToBackend = function(){
 		$scope.showContact = false;
