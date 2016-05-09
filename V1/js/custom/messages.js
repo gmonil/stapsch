@@ -24,12 +24,12 @@ jQuery(document).ready(function ($) {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
   $('[data-submenu]').submenupicker();
     $('.peopleListSlim').slimScroll({
-        height: '520px',
+        height: '548px',
         alwaysVisible: true
     });
 
     $('.chatHistorySlim').slimScroll({
-        height: '385px',
+        height: '438px',
         alwaysVisible: true
     });
 });
