@@ -27,7 +27,7 @@
 </head>
 
 
-<body class="skin-black fixed" ng-controller="schoolSettingsController" >
+<body class="skin-black" ng-controller="schoolSettingsController" >
   <!-- header logo: style can be found in header.less -->
 
   <header class="header" style="-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);box-shadow: 0 1px 2px rgba(0,0,0,0.3);border-bottom: 3px solid #eee;">
@@ -37,7 +37,7 @@
     </a>
     <!-- Header Navbar: style can be found in header.less -->
 
-    <nav class="navbar navbar-static-top" role="navigation">
+    <nav style="    background-color: #3c8dbc;    height: 46px;">
       <a href="#" class="featured-heading margin-top5">Model English School</a>
     </nav>
   </header>
@@ -101,10 +101,10 @@
               <strong> The Affiliation</strong>
               <p>IRA Global School is affiliated to Cambridge University and follows exclusively the CIE (Cambridge International Examination) pattern. Our Registration to Cambridge University is "IN928"</p>
             </div>
-            <div class="col-md-offset-10 col-md-2">
+            <div class="col-md-offset-10 col-sm-offset-10 col-sm-2 col-md-2">
               <button ng-hide="showControls" ng-click="editData()" class="btn btn-sm btn-default">Edit</button>
             </div>
-           <div class="col-md-4">
+           <div class="col-sm-6 col-md-4">
              <h4> Information</h4>
 
              <p class="no-margin">
@@ -123,7 +123,7 @@
                   <input ng-show="showControls" ng-model="medium1" type="text"/>
                 </p>
             </div>
-             <div class="col-md-4">
+             <div class="col-sm-6 col-md-4">
                 <h4> Contact Details</h4>
                 <p style="margin:0;">
                   <label class="labelCls">Phone:</label>
@@ -141,7 +141,7 @@
                    <p ng-show="showControls"> <input ng-model="email21" type="email"/> </p>
                 
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
                 <h4> Our Location</h4>
                 <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address1"></label>
