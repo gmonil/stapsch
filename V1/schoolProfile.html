@@ -102,7 +102,7 @@
               <p>IRA Global School is affiliated to Cambridge University and follows exclusively the CIE (Cambridge International Examination) pattern. Our Registration to Cambridge University is "IN928"</p>
             </div>
             <div class="col-md-offset-10 col-md-2">
-              <button ng-hide="showControls" ng-click="showControls=true" class="btn btn-sm btn-default">Edit</button>
+              <button ng-hide="showControls" ng-click="editData()" class="btn btn-sm btn-default">Edit</button>
             </div>
            <div class="col-md-4">
              <h4> Information</h4>
@@ -110,17 +110,17 @@
              <p class="no-margin">
                   <label class="labelCls">Principle Name:</label>
                   <label ng-hide="showControls" ng-bind="principalName"></label>
-                  <input ng-show="showControls" ng-model="principalName" type="text"/>
+                  <input ng-show="showControls" ng-model="principalName1" type="text"/>
                 </p>
                 <p class="no-margin">
                   <label class="labelCls">Board:</label>
                   <label ng-hide="showControls" ng-bind="board"></label>
-                  <input ng-show="showControls" ng-model="board" type="text"/>
+                  <input ng-show="showControls" ng-model="board1" type="text"/>
                 </p>
                 <p class="no-margin">
                   <label class="labelCls">Medium:</label>
                   <label ng-hide="showControls" ng-bind="medium"></label>
-                  <input ng-show="showControls" ng-model="medium" type="text"/>
+                  <input ng-show="showControls" ng-model="medium1" type="text"/>
                 </p>
             </div>
              <div class="col-md-4">
@@ -129,39 +129,39 @@
                   <label class="labelCls">Phone:</label>
                   <label ng-hide="showControls">{{contact1}} | {{contact2}} | {{contact3}}</label>
                    </p>
-                  <p ng-show="showControls"> <input ng-model="contact1" type="text"/> </p>
-                  <p ng-show="showControls"> <input ng-model="contact2" type="text"/> </p>
-                  <p ng-show="showControls"> <input ng-model="contact3" type="text"/> </p>
+                  <p ng-show="showControls"> <input ng-model="contact11" type="text"/> </p>
+                  <p ng-show="showControls"> <input ng-model="contact21" type="text"/> </p>
+                  <p ng-show="showControls"> <input ng-model="contact31" type="text"/> </p>
                
                 <p>
                   <label class="labelCls">Email:</label>
                   <label ng-hide="showControls">{{email1}}, {{email2}}</label>
                   </p>
-                   <p ng-show="showControls"> <input ng-model="email1" type="email"/> </p>
-                   <p ng-show="showControls"> <input ng-model="email2" type="email"/> </p>
+                   <p ng-show="showControls"> <input ng-model="email11" type="email"/> </p>
+                   <p ng-show="showControls"> <input ng-model="email21" type="email"/> </p>
                 
             </div>
             <div class="col-md-4">
                 <h4> Our Location</h4>
                 <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address1"></label>
-                  <input ng-show="showControls" ng-model="address1" type="text"/>
+                  <input ng-show="showControls" ng-model="address11" type="text"/>
                 </p>
                  <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address2"></label>
-                  <input ng-show="showControls" ng-model="address2" type="text"/>
+                  <input ng-show="showControls" ng-model="address21" type="text"/>
                 </p>
                  <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address3"></label>
-                  <input ng-show="showControls" ng-model="address3" type="text"/>
+                  <input ng-show="showControls" ng-model="address31" type="text"/>
                 </p>
                  <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address4"></label>
-                  <input ng-show="showControls" ng-model="address4" type="text"/>
+                  <input ng-show="showControls" ng-model="address41" type="text"/>
                 </p>
                  <p class="no-margin">
                   <label ng-hide="showControls" ng-bind="address5"></label>
-                  <input ng-show="showControls" ng-model="address5" type="text"/>
+                  <input ng-show="showControls" ng-model="address51" type="text"/>
                 </p>
             </div>  
             <div ng-show="showControls" class="col-md-12 text-center">
