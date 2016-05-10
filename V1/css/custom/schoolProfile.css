@@ -1,0 +1,17 @@
+img{
+	width: 100%;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.no-margin label{
+	margin-bottom: 0;
+}
+
+.labelCls{
+	font-weight: bold;
+	color: #666;
+	font-size: 14px;
+}
