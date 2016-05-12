@@ -174,7 +174,7 @@ body.fixed .wrapper {
 
 .content {
   padding: 0px 0px 0 0px;
-  background: #e6e7e8;
+  background: #ffffff;
   /*overflow: auto;*/
 }
 
@@ -472,8 +472,8 @@ body > .header .logo .icon {
   margin: 0;
   padding: 0;
 }
-.sidebar .sidebar-menu > li > a {
-  padding: 10px 5px 9px 15px;
+.sidebar .sidebar-menu > li {
+  padding: 8px 5px 8px 15px;
   display: block;
 }
 .sidebar .sidebar-menu > li > a > .fa,

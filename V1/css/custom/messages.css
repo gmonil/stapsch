@@ -31,7 +31,9 @@ input[type=text] {
     position: relative !important;
     left: calc(100% - 50px) !important;
 }
-
+.col-md-9.col-lg-9{
+  border: 1px solid #555;
+}
 .people-list{
 	background: #ffffff;
   border-right: 1px solid #555;
@@ -301,12 +303,12 @@ textarea {
   white-space: pre-wrap;
 }
 
-.clearfix.active{
+.peopleListSlim .clearfix.active{
   background: #eeeeee;
   cursor: pointer;
 }
 
-.clearfix:hover{
+.peopleListSlim .clearfix:hover{
   background: #dcdcdc;
   cursor: pointer;
 }

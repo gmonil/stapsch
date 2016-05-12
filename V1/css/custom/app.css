@@ -39,7 +39,7 @@
     position: absolute;
     content:" ";
     width: 2px;
-    background: #fffff0;
+    background: #D6D1C7;
     left: 50%;
     margin-left: -1.5px;
 }
@@ -295,7 +295,7 @@
 }
 
 .rightSec{
-    background: #E6E7E8;
+    background: #ffffff;
     border: none;
     box-shadow: none;
 }
