@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;
-  background: #e6e7e8;
+  background: #ffffff;
 }
 a {
   color: #3c8dbc;
@@ -907,6 +907,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   padding: 7px 13px;
   border-top: 1px solid #eee;
   text-align: center;
+  position: relative;
 }
 .panel-primary>.panel-heading {
   background-color: #fafafa;
@@ -1034,4 +1035,27 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 .right-side{
   background: #e6e7e8;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
 }
