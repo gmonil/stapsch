@@ -976,9 +976,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 20px;
     color: #fff;
 }
-.modal-body {
-  padding: 0;
-}
+
 .modal-header .close {
   margin-top: 11px;
   margin-right: 11px;
@@ -1037,6 +1035,24 @@ only screen and (min-device-pixel-ratio: 1.5) {
   background: #e6e7e8;
 }
 
+.btn-popup-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-popup-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -1058,4 +1074,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 input[readonly] {
   background-color: white !important;
   cursor: text !important;
+}
+
+.form-group{
+  margin-bottom: 5px;
 }
