@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
+        <title>Staptalk | Settings</title>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <!-- bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.min.css">
+        <!-- font Awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!--custom css-->
+        <link href="css/custom/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/custom/skin.css" rel="stylesheet" type="text/css" />
+        <link href="css/custom/settings.css" rel="stylesheet" type="text/css" />
+        <link href="css/datepicker3.css" rel="stylesheet" type="text/css" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="skin-black fixed">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header" style="-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);box-shadow: 0 1px 2px rgba(0,0,0,0.3);border-bottom: 3px solid #eee;">
+            <button type="button" class="navbar-btn sidebar-toggle btnCls" data-toggle="offcanvas" id="main-menu-toggle">
+            <i class="navbar-icon fa fa-bars icon"></i>
+            </button>
+            <a style="height:46px;" href="index.html" class="logo">
+            STAPTALK
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="schoolProfile.html" target="_blank" class="featured-heading margin-top5">Model English School</a>
+                <div class="nav navbar-nav navbar-right">
+                    <div class="dropdown user user-menu">
+                        <a tabindex="0" data-toggle="dropdown" data-submenu="" aria-expanded="true">
+                        <i style="color:white;" class="fa fa-user"></i>
+                        <span style="color:white;">Sagar Tiwari</span>
+                        <span style="color:white;" class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a  style="padding-left: 35px;padding-top: 7px;">Mahesh Tiwari</a>
+                                <ul class="dropdown-menu">
+                                    <li><a >Mahesh Tiwari Part 1</a></li>
+                                    <li><a >Mahesh Tiwari Part 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                <i class="fa fa-user fa-fw"></i> Profile
+                                </a>
+                                <a href="settings.html">
+                                <i class="fa fa-cog fa-fw"></i> Settings
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"><i class="fa fa-ban fa-fw"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+        <aside class="left-side sidebar-offcanvas left-trans">
+            <section class="sidebar">
+               <ul class="sidebar-menu">
+                    <li>
+                        <a href="messages.html">
+                            <img src="css/images/sms-512.png"> <span>Messages</span>
+                        </a>
+                         &nbsp;&nbsp;<span class="fa fa-plus" aria-hidden="true" data-toggle="modal" data-target="#myMsgModal"></span>
+                    </li>
+
+                    <li>
+                        <a href="alerts.html">
+                            <img src="css/images/flash_auto-512.png"> <span>Alerts</span>
+                        </a>
+                        &nbsp;&nbsp;<span class="fa fa-plus" aria-hidden="true" data-toggle="modal" data-target="#myAlertModal"></span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="css/images/advertising-512.png"> <span>Notices</span>
+                        </a>
+                         &nbsp;&nbsp;<span class="fa fa-plus" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/contacts-512.png"> <span>Notes</span>
+                        </a>
+                         &nbsp;&nbsp;<span class="fa fa-plus" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/approval-512.png"> <span>Attendence</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/sports_mode-512.png"> <span>Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/overtime-512.png"> <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/currency_exchange-512.png"> <span>Fees</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/film_reel-512.png"> <span>Videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/multiple_inputs-512.png"> <span>Mapping</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="css/images/graduation_cap-512.png"> <span>Alumini</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <aside class="right-side">
+            <!-- Main content -->
+            <section class="content">
+                <div class="row" style="margin-bottom:5px;margin-left:0;">
+                    <div class="col-md-9 col-lg-9" style="margin-top: 10px;">
+                        <div ng-app="settingsApp" ng-controller="settingsController">
+                            <div class="form-horizontal" role="form" style="padding: 10px;padding-right: 20px;background: white;">
+                                <div ng-hide="showName" class="form-group">
+                                    <label class="control-label col-sm-2">Name:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showName=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <label class="control-label" ng-bind="getName()"></label>
+                                    </div>
+                                    
+                                </div>
+                                <div ng-show="showName" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="firstName">Salutation:</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" ng-model="salutationAll">
+                                                <option value="Mr.">Mr.</option>
+                                                <option value="Mrs.">Mrs.</option>
+                                                <option value="Mst.">Mst.</option>
+                                                <option value="Ms.">Ms.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="firstName">First Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="firstName" id="firstName" placeholder="Enter First Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="middleName">Middle Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="middleName" id="middleName" placeholder="Enter Middle Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="lastName" id="lastName" placeholder="Enter Last Name">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveNamesToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showName=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-hide="showPassword">
+                                    <label class="control-label col-sm-2">Password:</label>
+                                    <div class="pull-right">
+                                        <button ng-hide="showPassword" ng-click='newpassword = "";confirmnewpassword = "";currentpassword = "";showPassword=true;' class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <input type="password" style="cursor:default;" class="form-control" ng-model="password" ng-disabled="true">
+                                    </div>
+                                </div>
+                                <div ng-show="showPassword" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Current Password:</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" ng-model="currentpassword">
+                                        </div>
+                                    </div>
+                                     <div class="form-group">
+                                        <label class="control-label col-sm-2">New Password:</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" ng-model="newpassword">
+                                        </div>
+                                    </div>
+                                     <div class="form-group">
+                                        <label class="control-label col-sm-2">Confirm New Password:</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" ng-model="confirmnewpassword">
+                                        </div>
+                                    </div>
+                                    <br/> 
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="savePasswordToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showPassword=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div ng-hide="showContact" class="form-group">
+                                    <label class="control-label col-sm-2">Contacts:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showContact=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label" ng-bind="getContacts()"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showContact" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Contact 1:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="contact1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Contact 2:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="contact2">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveContactToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showContact=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div ng-hide="showEmails" class="form-group">
+                                    <label class="control-label col-sm-2">Emails:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showEmails=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label ng-bind="getEmails()" class="control-label"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showEmails" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Email 1:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" ng-model="email1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Email 2:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" ng-model="email2">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveEmailToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showEmails=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div class="visible-xs clearfix row">
+                                 <br/>
+                                 </div>
+                                
+                                <div ng-hide="showAddress" class="form-group">
+                                    <label class="control-label col-sm-2">Home Address:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showAddress=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label ng-bind="getAddress()" class="control-label"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showAddress" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Line 1:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="line1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Line 2:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="line2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Line 3:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="line3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Line 4:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="line4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">City:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="city">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">State:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="state">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Country:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="country">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Zip:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="zip">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveAddressToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showAddress=false">Cancel</button>
+                                    </div>
+                                </div>
+                                 <div class="visible-xs clearfix row">
+                                    <br/><br/>
+                                 </div>
+                                <div ng-hide="showOccupation" class="form-group">
+                                    <label class="control-label col-sm-2">Occupation:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showOccupation=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label">{{occupation}}</label>
+                                    </div>
+                                </div>
+                                <div ng-show="showOccupation" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Occupation:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="occupation">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveOccupationToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showOccupation=false">Cancel</button>
+                                    </div>
+                                </div>
+                                
+                                <h5 style="border-bottom: 1px solid #000000; margin-right: -10px;"> Student Information</h5>
+                                <div ng-hide="showStudentName" class="form-group">
+                                    <label class="control-label col-sm-2">Name:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showStudentName=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label" ng-bind="getStudentName()"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showStudentName" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="firstName">Salutation:</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" ng-model="salutationStudentAll">
+                                                <option value="Mr.">Mr.</option>
+                                                <option value="Mrs.">Mrs.</option>
+                                                <option value="Mst.">Mst.</option>
+                                                <option value="Ms.">Ms.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="firstNameStudent">First Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="firstNameStudent" id="firstNameStudent" placeholder="Enter First Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="middleNameStudent">Middle Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="middleNameStudent" id="middleNameStudent" placeholder="Enter Middle Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="lastNameStudent">Last Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="lastNameStudent" id="lastNameStudent" placeholder="Enter Last Name">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveStudentNamesToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showStudentName=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2">Class:</label>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label" ng-bind="class"> </label>
+                                    </div>
+                                </div>
+                                <div ng-hide="showStudentSkills" class="form-group">
+                                    <label class="control-label col-sm-2">Skills:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showStudentSkills=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label" ng-bind="studentSkills"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showStudentSkills" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Skills:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="studentSkills">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveStudentSkillsToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showStudentSkills=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <div ng-hide="showStudentAcedemics" class="form-group">
+                                    <label class="control-label col-sm-2">Acedemics:</label>
+                                    <div class="pull-right">
+                                        <button ng-click="showStudentAcedemics=true" class="btn btn-sm btn-default">Edit</button>
+                                    </div>
+                                    <div class=" col-sm-9">
+                                        <label class="control-label" ng-bind="studentAcedemics"></label>
+                                    </div>
+                                </div>
+                                <div ng-show="showStudentAcedemics" class="editForm">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2">Acedemics:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="studentAcedemics">
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="saveStudentAcademicsToBackend()">Save</button>
+                                        <button class="btn btn-default" ng-click="showStudentAcedemics=false">Cancel</button>
+                                    </div>
+                                </div>
+                                <!--End-->
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="visible-lg ppp col-lg-3">
+                        <div data-spy="affix" data-offset-top="-50" class="panel panel-primary rightSec">
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                  </div>
+            </section>
+        </aside>
+            <div class="footer-main">
+                Copyright &copy; Staptalk, 2016
+            </div>
+        </div>
+        <div id="myMsgModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-title">Post Message</div>
+                </div>
+                <div class="modal-body" style="padding-bottom:0;">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_msg_to">Standard:</label>
+                            <div class="col-sm-4">
+                                <select id="modal_msg_to" class="form-control">
+                                    <option>All</option>
+                                    <option>IX-A</option>
+                                    <option>IX-B</option>
+                                </select>
+                            </div>
+                            <label class="control-label col-sm-2" for="modal_stu_to">Student:</label>
+                            <div class="col-sm-4">
+                                <select id="modal_stu_to" class="form-control">
+                                    <option>All</option>
+                                    <option>Mahesh Tiwari</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_msg_subject">Subject:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="modal_msg_subject">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_msg_desc">Description:</label>
+                            <div class="col-sm-10">
+                                <textarea type="text" class="form-control" id="modal_msg_desc"></textarea>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <input type="file" style="padding-top:10px; padding-left: 15px;">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="myAlertModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-title">Post Alert</div>
+                </div>
+                <div class="modal-body" style="padding-bottom:0;">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_alert_to">Standard:</label>
+                            <div class="col-sm-4">
+                                <select id="modal_alert_to" class="form-control">
+                                    <option>All</option>
+                                    <option>IX-A</option>
+                                    <option>IX-B</option>
+                                </select>
+                            </div>
+                            <label class="control-label col-sm-2" for="modal_alert_stu">Student:</label>
+                            <div class="col-sm-4">
+                                <select id="modal_alert_stu" class="form-control">
+                                    <option>All</option>
+                                    <option>Mahesh Tiwari</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_alert_subject">From:</label>
+                            <div class="col-sm-4" style="padding-right: 0;">
+                                <div class="input-group date" id="datePicker1" data-provide="datepicker">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="control-label col-sm-2" for="modal_alert_subject">To:</label>
+                            <div class="col-sm-4" style="padding-right: 0;">
+                                <div class="input-group date" id="datePicker2" data-provide="datepicker">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="modal_alert_desc">Description:</label>
+                            <div class="col-sm-10">
+                                <textarea type="text" class="form-control" id="modal_alert_desc"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" style="padding-top:10px; padding-left: 15px;">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer" style="padding-top: 0px;">
+                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/angularjs.min.js" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="js/bootstrap-submenu.min.js" type="text/javascript"></script>
+        <script src="js/custom/settings.js" type="text/javascript"></script>
+        <script src="js/custom/alertPopup.js" type="text/javascript"></script>
+    </body>
+</html>
