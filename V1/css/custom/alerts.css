@@ -65,8 +65,8 @@
     clear: both;
 }
 .timeline > li > .timeline-panel {
-    width: calc(50% - 25px);
-    width: -moz-calc(50% - 25px);
+    width: calc(100% - 25px);
+    width: -moz-calc(100% - 25px);
     width: -webkit-calc(100% - 25px);
     float: left;
     border: 1px solid #dcdcdc;
@@ -267,6 +267,10 @@
 }
 .timeline-heading h5 i{
     font-size: 15px;
+}
+.timeline-heading h5 img {
+    width: 24px;
+    margin-bottom: 4px;
 }
 .noticesCls .timeline-heading h5{
     color: #B5656D;

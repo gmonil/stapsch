@@ -16,7 +16,9 @@ $("[data-toggle='offcanvas']").click(function (e) {
 		$(".right-side").toggleClass("left-trans");
 	}
 });
-
+jQuery(document).ready(function ($) {
+	$('[data-submenu]').submenupicker();
+});
 /*jQuery(document).ready(function ($) {
 	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
 	$('[data-submenu]').submenupicker();

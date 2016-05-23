@@ -913,11 +913,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
   background-color: #fafafa;
   border-radius: 0;
 }
-.featured-heading {
+.featured-heading, .featured-heading:visited {
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
 }
+.featured-heading:hover{
+  outline: none;
+  text-decoration: none;
+  color: #72afd2;
+
+}
+
+
 .margin-bottom15 {
   margin-bottom: 15px!important;
 }
@@ -1032,7 +1040,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
    }
 }
 .right-side{
-  background: #e6e7e8;
+  background: #ffffff;
 }
 
 .btn-popup-file {

@@ -1,7 +1,6 @@
 //Enable sidebar toggle
 $("[data-toggle='offcanvas']").click(function (e) {
 	e.preventDefault();
-
 	$('body').toggleClass("collp");
 	//If window is small enough, enable sidebar push menu
 	if ($(window).width() <= 992) {
@@ -15,4 +14,8 @@ $("[data-toggle='offcanvas']").click(function (e) {
 		$(".right-side").toggleClass("strech");
 		$(".right-side").toggleClass("left-trans");
 	}
+});
+
+jQuery(document).ready(function ($) {
+	$('[data-submenu]').submenupicker();
 });

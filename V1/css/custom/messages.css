@@ -45,12 +45,15 @@ input[type=text] {
   
   border: none;
   padding: 6px;
-  color: white;
-  background: #eeeeee;
+  color: #666;
   width: 91%;
   font-size: 14px;
   margin-left: 5px;
   padding-right: 30px;
+}
+.people-list input:hover{
+   border:2px solid #A5C7FE;
+   height: 37px;
 }
 .people-list .fa-search {
   position: relative;
@@ -59,7 +62,7 @@ input[type=text] {
 }
 .people-list ul {
   padding: 0 11px 0 10px;
-list-style: none;
+  list-style: none;
 }
 .people-list ul li {
 	padding: 10px 0;
@@ -110,8 +113,8 @@ list-style: none;
   margin-top: 12px;
 }
 .chat .chat-history {
-  padding: 15px 30px 10px;
-  overflow-y: scroll; 
+  padding: 15px 30px 10px 0;
+  overflow-y: visible; 
       max-height: 491px;
     height: 491px;
 }
@@ -131,6 +134,7 @@ list-style: none;
   margin-bottom: 25px;
   width: 90%;
   position: relative;
+  white-space: pre-wrap;
 }
 .chat .chat-history ul{
 	list-style: none;
@@ -272,6 +276,8 @@ textarea:focus{
 }
 .topic{
 	color: #F17F5f;
+  overflow: visible;
+  white-space: normal;
 }
 .topic i{
  color: #E38968;
@@ -311,4 +317,59 @@ textarea {
 .peopleListSlim .clearfix:hover{
   background: #dcdcdc;
   cursor: pointer;
+}
+
+.people-list .slimScrollDiv {
+  margin-top: 5px;
+}
+
+
+
+@media (max-width: 768px) { 
+  .people-list-min{
+    min-width: 260px;
+    width:260px;
+  }
+  .chat-history-min{
+    min-width: 400px;
+    width:400px;
+    max-width:400px;
+  }
+ }
+@media (min-width: 768px) and (max-width: 991px) { 
+.people-list-min{
+     min-width: 150px;
+    width: 150px;
+  }
+  .chat-history-min{
+    min-width: 400px;
+    width:400px;
+    max-width:400px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) { 
+.people-list-min{
+     min-width: 150px;
+    width: 150px;
+  }
+  .chat-history-min{
+    min-width: 400px;
+    width:400px;
+    max-width:400px;
+  }
+
+}
+@media (min-width: 1200px ) { 
+  .people-list-min{
+    min-width: 260px;
+    width: 260px;
+  }
+  .chat-history-min{
+    min-width: 500px;
+    width:500px;
+  } 
+}
+
+.table{
+  margin-bottom: 0 !important;
 }
