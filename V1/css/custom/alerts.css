@@ -40,13 +40,13 @@
     content:" ";
     width: 2px;
     background: #D6D1C7;
-    left: 50%;
+    left: 0;
     margin-left: -1.5px;
 }
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
-    width: 50%;
+    width: 100%;
     float: left;
     clear: left;
 }
@@ -153,9 +153,9 @@
     float: right;
     clear: right;
 }
-.timeline > li:nth-child(2) {
+/*.timeline > li:nth-child(2) {
     margin-top: 60px;
-}
+}*/
 .timeline > li.timeline-inverted > .timeline-badge {
     left: -12px;
 }
