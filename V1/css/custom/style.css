@@ -900,15 +900,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-image: url('iCheck/minimal/minimal@2x.png');
     -webkit-background-size: 200px 20px;
     background-size: 200px 20px;
-  }
+ 
+ }
 }
+
+
 .footer-main {
   background-color: #a3e4fd;
   padding: 7px 13px;
   border-top: 1px solid #eee;
   text-align: center;
-  position: relative;
+	position:relative;
 }
+
 .panel-primary>.panel-heading {
   background-color: #fafafa;
   border-radius: 0;
@@ -1086,4 +1090,23 @@ input[readonly] {
 
 .form-group{
   margin-bottom: 5px;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
 }
