@@ -122,3 +122,37 @@ app.controller("settingsController",function($scope){
 	}
 
 });
+
+$(window).bind("load", function() { 
+       
+	   
+	positionFooter();
+
+	function positionFooter() {
+
+		setTimeout(function() {
+			var footerHeight = 0,
+		   	footerTop = 0,
+		   	$footer = $(".footer-main");
+		
+	        footerHeight = $footer.height();
+	        footerTop = ($(window).scrollTop()+$(window).height()-footerHeight) - 15 +"px";
+	        console.log("footerTop" + footerTop);
+	       if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+	          $footer.css({
+	                position: "absolute",
+	                top: footerTop
+	           })
+	       } else {
+	           $footer.css({
+	                position: "relative"
+	           })
+	       }
+		}, 100);
+			       
+	}
+
+	$(window)
+	       .scroll(positionFooter)
+	       .resize(positionFooter)            
+});

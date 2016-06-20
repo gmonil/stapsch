@@ -19,13 +19,33 @@ $("[data-toggle='offcanvas']").click(function (e) {
 jQuery(document).ready(function ($) {
 	$('[data-submenu]').submenupicker();
 });
-/*jQuery(document).ready(function ($) {
-	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
-	$('[data-submenu]').submenupicker();
-	
-});
+$(window).bind("load", function() { 
+       
+	var footerHeight = 0,
+	   footerTop = 0,
+	   $footer = $(".footer-main");
+	   
+	positionFooter();
 
-$(window).resize(function () {
-	$('aside[class="left-side sidebar-offcanvas left-trans"]').height($("body").height() - 46);
+	function positionFooter() {
+
+	        footerHeight = $footer.height();
+	        footerTop = ($(window).scrollTop()+$(window).height()-footerHeight) - 15 +"px";
+
+	       if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+	           $footer.css({
+	                position: "absolute",
+	                top: footerTop
+	           })
+	       } else {
+	           $footer.css({
+	                position: "relative"
+	           })
+	       }
+	       
+	}
+
+	$(window)
+	       .scroll(positionFooter)
+	       .resize(positionFooter)            
 });
-*/
