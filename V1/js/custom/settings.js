@@ -120,7 +120,30 @@ app.controller("settingsController",function($scope){
 	$scope.saveStudentAcademicsToBackend  = function(){
 		$scope.showStudentAcedemics = false;
 	}
+	$scope.positionFooter = function() {
 
+		setTimeout(function() {
+			var footerHeight = 0,
+		   	footerTop = 0,
+		   	$footer = $(".footer-main");
+		
+	        footerHeight = $footer.height();
+	        footerTop = ($(window).scrollTop()+$(window).height()-footerHeight) - 15 +"px";
+	        console.log("footerTop" + footerTop);
+	       if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+	          $footer.css({
+	                position: "absolute",
+	                //top: footerTop
+	                bottom:"0px"
+	           })
+	       } else {
+	           $footer.css({
+	                position: "relative"
+	           })
+	       }
+		}, 100);
+			       
+	}
 });
 
 $(window).bind("load", function() { 
@@ -141,7 +164,8 @@ $(window).bind("load", function() {
 	       if ( ($(document.body).height()+footerHeight) < $(window).height()) {
 	          $footer.css({
 	                position: "absolute",
-	                top: footerTop
+	                //top: footerTop
+	                bottom:"0px"
 	           })
 	       } else {
 	           $footer.css({

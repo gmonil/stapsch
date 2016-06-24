@@ -148,7 +148,7 @@
                                     <div ng-hide="showName" class="form-group">
                                         <label class="control-label col-sm-2">Name:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showName=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showName=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class="col-sm-9">
                                             <label class="control-label" ng-bind="getName()"></label>
@@ -188,13 +188,13 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveNamesToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showName=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showName=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div class="form-group" ng-hide="showPassword">
                                         <label class="control-label col-sm-2">Password:</label>
                                         <div class="pull-right">
-                                            <button ng-hide="showPassword" ng-click='newpassword = "";confirmnewpassword = "";currentpassword = "";showPassword=true;' class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-hide="showPassword" ng-click='newpassword = "";confirmnewpassword = "";currentpassword = "";showPassword=true;;positionFooter();' class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <input type="password" style="cursor:default;" class="form-control" ng-model="password" ng-disabled="true">
@@ -222,13 +222,13 @@
                                         <br/> 
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="savePasswordToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showPassword=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showPassword=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div ng-hide="showContact" class="form-group">
                                         <label class="control-label col-sm-2">Contacts:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showContact=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showContact=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label class="control-label" ng-bind="getContacts()"></label>
@@ -250,13 +250,13 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveContactToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showContact=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showContact=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div ng-hide="showEmails" class="form-group">
                                         <label class="control-label col-sm-2">Emails:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showEmails=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showEmails=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label ng-bind="getEmails()" class="control-label"></label>
@@ -278,7 +278,7 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveEmailToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showEmails=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showEmails=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div class="visible-xs clearfix row">
@@ -288,7 +288,7 @@
                                     <div ng-hide="showAddress" class="form-group">
                                         <label class="control-label col-sm-2">Home Address:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showAddress=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showAddress=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label ng-bind="getAddress()" class="control-label"></label>
@@ -346,7 +346,7 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveAddressToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showAddress=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showAddress=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                      <div class="visible-xs clearfix row">
@@ -355,7 +355,7 @@
                                     <div ng-hide="showOccupation" class="form-group">
                                         <label class="control-label col-sm-2">Occupation:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showOccupation=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showOccupation=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label class="control-label">{{occupation}}</label>
@@ -371,7 +371,7 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveOccupationToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showOccupation=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showOccupation=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     
@@ -379,7 +379,7 @@
                                     <div ng-hide="showStudentName" class="form-group">
                                         <label class="control-label col-sm-2">Name:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showStudentName=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showStudentName=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label class="control-label" ng-bind="getStudentName()"></label>
@@ -418,7 +418,7 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveStudentNamesToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showStudentName=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showStudentName=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -430,7 +430,7 @@
                                     <div ng-hide="showStudentSkills" class="form-group">
                                         <label class="control-label col-sm-2">Skills:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showStudentSkills=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showStudentSkills=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label class="control-label" ng-bind="studentSkills"></label>
@@ -446,13 +446,13 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveStudentSkillsToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showStudentSkills=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showStudentSkills=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <div ng-hide="showStudentAcedemics" class="form-group">
                                         <label class="control-label col-sm-2">Acedemics:</label>
                                         <div class="pull-right">
-                                            <button ng-click="showStudentAcedemics=true" class="btn btn-sm btn-default">Edit</button>
+                                            <button ng-click="showStudentAcedemics=true;positionFooter();" class="btn btn-sm btn-default">Edit</button>
                                         </div>
                                         <div class=" col-sm-9">
                                             <label class="control-label" ng-bind="studentAcedemics"></label>
@@ -468,7 +468,7 @@
                                         <br/>
                                         <div class="text-center">
                                             <button class="btn btn-primary" ng-click="saveStudentAcademicsToBackend()">Save</button>
-                                            <button class="btn btn-default" ng-click="showStudentAcedemics=false">Cancel</button>
+                                            <button class="btn btn-default" ng-click="showStudentAcedemics=false;positionFooter();">Cancel</button>
                                         </div>
                                     </div>
                                     <!--End-->
